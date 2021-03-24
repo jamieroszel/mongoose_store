@@ -22,34 +22,29 @@ const newProduct = async (req, res) => {
   res.send('new product')
 }
 
-
-// create - Add new product to database, then redirect to index
-const create = async (req, res) => {
-  res.send('create')
+// destroy - delete a particular product, then redirect to index
+const destroy = async (req, res) => {
+  res.send('destroy')
 }
-
-
-// show - show info about one product
-const show = async (req, res) => {
-  res.send('show')
-}
-
-
-// edit - show edit form of one product
-const edit = async (req, res) => {
-  res.send('edit')
-}
-
 
 // update -  update a particular product, then redirect to index
 const update = async (req, res) => {
   res.send('update')
 }
 
+// create - Add new product to database, then redirect to index
+const create = async (req, res) => {
+  res.send('create')
+}
 
-// destroy - delete a particular product, then redirect to index
-const destroy = async (req, res) => {
-  res.send('destroy')
+// edit - show edit form of one product
+const edit = async (req, res) => {
+  res.send('edit')
+}
+
+// show - show info about one product
+const show = async (req, res) => {
+  res.send('show')
 }
 
 // export controller so it's bundled by object
