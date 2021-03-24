@@ -5,18 +5,18 @@
 // that name is stored inside the constant Blog
 // then, export the module
 
-// create schema
-const Schema = mongoose.Schema;
+// import model and Schema
+const {model, Schema} = require('../db/connection')
 
-const productSchema = new Schema({
+const ProductSchema = new Schema({
     name: String,
     description: String,
     img: String, // <---- this will hold an image url
     price: {type: Number, min: 0},
     qty: {type: Number, min: 0},
-})
+}, {timestamps: true})
 
 // create model
-const Product = mongoose.model('Product', productSchema);
+const Product = mongoose.model('Product', ProductSchema);
 
 module.export = Product;
