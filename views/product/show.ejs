@@ -24,9 +24,15 @@
       <img src="<%= product.img %>" />
       <h2><%=product.price %></h2>
       <h2><%=product.qty %></h2>
-      <a class="btn btn-success" href="#"
-        ><i class="icon-shopping-cart icon-large"></i> Buy</a
+      <a class="btn btn-success" href="/product/buy/<%= product._id %>">
+        <i class="icon-shopping-cart icon-large"></i> Buy</a
       >
+      <a class="btn btn-success" href="/product/<%= product._id %>/edit "
+        ><i class="fal fa-edit"></i> Edit Product</a
+      >
+      <form action="/product/<%= product._id %>?_method=DELETE " method="post">
+        <input type="submit" value="Delete from Inventory" />
+      </form>
     </main>
   </body>
 </html>

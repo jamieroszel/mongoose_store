@@ -26,9 +26,15 @@
         <a href="/product/<%= product._id %>"
           ><img src="<%= product.img %>"
         /></a>
-        <h2><%=product.price %></h2>
-        <h2><%=product.qty %></h2>
-        <a class="btn btn-success" href="#">
+        <h2>
+          <p>Price</p>
+          <%=product.price %>
+        </h2>
+        <h2>
+          <p>Available Inventory</p>
+          <%=product.qty %>
+        </h2>
+        <a class="btn btn-success" href="/product/buy/<%= product._id %> ">
           <i class="icon-shopping-cart icon-large"></i> Buy</a
         >
       </article>

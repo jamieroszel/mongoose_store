@@ -20,6 +20,10 @@ router.put('/:id', ProductController.update)
 // destroy delete => '/product/:id'
 router.delete('/:id', ProductController.destroy)
 
+// add functionality to buy button (delete from qty) 
+router.get('/buy/:id', ProductController.buy)
+
+
 // show get => '/product'
 router.get('/:id', ProductController.show)
 

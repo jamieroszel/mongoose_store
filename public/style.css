@@ -8,28 +8,44 @@ h1 {
 
 main {
   width: 80%;
-  margin: 10px auto;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #4a8fff;
   justify-content: space-between;
   align-items: flex-end;
+  width: auto;
+  height: auto;
+  margin: auto;
+  color: #ff924a;
+  padding: 25px;
 }
 
 article {
   width: 300px;
   margin: 5px;
-  color: #ff924a;
   text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #4a8fff;
+  border-radius: 10%;
+  padding: 10px;
 }
 
 article img {
   width: 200px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 5px;
 }
 #formContainer {
   justify-content: flex-start;
   margin: auto;
   padding: 25px;
+}
+
+p {
+  color: white;
 }
