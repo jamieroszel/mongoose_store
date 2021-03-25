@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff924a;
+  color: #4a8fff;
+}
+
+main {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4a8fff;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+article {
+  width: 300px;
+  margin: 5px;
+  color: #ff924a;
+  text-align: center;
+}
+
+article img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
