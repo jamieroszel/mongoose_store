@@ -3,6 +3,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ff924a;
   color: #4a8fff;
+  padding: 5px;
 }
 
 main {
@@ -26,4 +27,9 @@ article img {
   width: 200px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#formContainer {
+  justify-content: flex-start;
+  margin: auto;
+  padding: 25px;
 }

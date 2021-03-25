@@ -17,22 +17,16 @@
   </head>
   <body>
     <h1>Welcome to Shop Chain, your local Super Store.</h1>
-    <a href="product/new"><i class="icon-plus"></i> Add to inventory</a>
-
+    <button>
+      <a href="/product"><i class="icon-fixed-width icon-home"></i> Home</a>
+    </button>
     <main>
-      <% for (product of products) { %>
-
-      <article>
-        <a href="/product/<%= product._id %>"
-          ><img src="<%= product.img %>"
-        /></a>
-        <h2><%=product.price %></h2>
-        <h2><%=product.qty %></h2>
-        <a class="btn btn-success" href="#">
-          <i class="icon-shopping-cart icon-large"></i> Buy</a
-        >
-      </article>
-      <% } %>
+      <img src="<%= product.img %>" />
+      <h2><%=product.price %></h2>
+      <h2><%=product.qty %></h2>
+      <a class="btn btn-success" href="#"
+        ><i class="icon-shopping-cart icon-large"></i> Buy</a
+      >
     </main>
   </body>
 </html>

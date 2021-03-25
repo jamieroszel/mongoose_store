@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <title>Shop Chain</title>
+  </head>
+  <body>
+    <h1>Welcome to Shop Chain, your local Super Store.</h1>
+    <button>
+      <a href="/product"><i class="icon-fixed-width icon-home"></i> Home</a>
+    </button>
+    <main>
+      <article id="formContainer">
+        <form id="form" action="/product" method="post">
+          <input type="text" placeholder="name" name="name" />
+          <input
+            type="text"
+            placeholder="describe the product"
+            name="description"
+          />
+          <input type="text" placeholder="insert img url" name="img" />
+          <input type="text" placeholder="enter quantity" name="quantity" />
+          <input type="text" placeholder="enter price" name="price" />
+          <input type="submit" value="Add Product to Inventory" />
+        </form>
+      </article>
+      <!--close form container-->
+    </main>
+  </body>
+</html>

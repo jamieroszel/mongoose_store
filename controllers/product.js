@@ -19,7 +19,7 @@ const index = async (req, res) => {
 
 // new - Show form to add new products
 const newProduct = async (req, res) => {
-  res.send('new product')
+  res.render('product/new')
 }
 
 // destroy - delete a particular product, then redirect to index
@@ -34,7 +34,10 @@ const update = async (req, res) => {
 
 // create - Add new product to database, then redirect to index
 const create = async (req, res) => {
-  res.send('create')
+  // create the new product
+  await Product.create(req.body)
+  // redirect to the main page
+  res.redirect('/product')
 }
 
 // edit - show edit form of one product
@@ -44,7 +47,14 @@ const edit = async (req, res) => {
 
 // show - show info about one product
 const show = async (req, res) => {
-  res.send('show')
+  // get the id param
+  const id = req.params.id
+  // get a dog
+  const product = await Product.findById(id)
+  // render a view
+  res.render('product/show', {
+    product
+  })
 }
 
 // export controller so it's bundled by object
