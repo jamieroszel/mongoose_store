@@ -2,6 +2,6 @@
     "name": "my-mongodb-api",
     "version": 2,
     "env": {
-      "MONGODB_URI": "@my-mongodb-uri"
+      "MONGODB_URI": "mongodb+srv://new_user:Ykudnr6UXYQEDGT@cluster0.tecvv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     }
   }
